@@ -58,6 +58,8 @@ _.inRange(2, 2);
 // => false
 ```
 
+> #### "String" methods:
+
 ## [`_.words()`](https://lodash.com/docs/4.17.15#words)
 
 Splits string into an array of its words.
