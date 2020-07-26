@@ -102,3 +102,28 @@ _.pad('abc', 8);
 _.pad('abc', 3);
 // => 'abc'
 ```
+
+> #### "Object" methods:
+
+## [`_.has()`](https://lodash.com/docs/4.17.15#has)
+
+Checks if path is a direct property of object.
+
+```
+.has() takes two arguments: an object and a key
+
+.has() checks to see if the provided object contains a value at the specified key
+
+.has() will return true if the object contains a value at the key and will return false if not
+```
+
+### Example
+``` js
+var object = {"key": "value"};
+
+_.has(object, 'key');
+// => true
+
+_.has(object, 'notKey');
+// => false
+```
