@@ -1,6 +1,6 @@
 # Implementing Lodash.js
 
-> ### "Number" methods:
+> #### "Number" methods:
 
 ## [`_.clamp()`](https://lodash.com/docs/4.17.15#clamp)
 
