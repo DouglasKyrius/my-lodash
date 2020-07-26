@@ -40,6 +40,12 @@ const _ = {
     const paddedString = ' '.repeat(startPaddingLength) + string + ' '.repeat(endPaddingLength);
 
     return paddedString;
+  },
+  
+  has: function(object, key) {
+    const hasValue = object[key] != undefined;
+    
+    return hasValue;
   }
 };
 
