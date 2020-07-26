@@ -103,7 +103,9 @@ _.pad('abc', 3);
 // => 'abc'
 ```
 
-> #### "Object" methods:
+
+> ### "Object" methods:
+
 
 ## [`_.has()`](https://lodash.com/docs/4.17.15#has)
 
