@@ -56,13 +56,25 @@ _.inRange(4, 2);
  
 _.inRange(2, 2);
 // => false
+```
+
+## [`_.words()`](https://lodash.com/docs/4.17.15#words)
+
+Splits string into an array of its words.
+
+```
+.words() takes one argument: a string
+
+.words() splits the string into an array of words
+
+A word is defined by a space-separated string of characters, so each space character, ' ', indicates the end of one word and the start of the next
+```
+
+Example
+``` js
+_.words('hi there you');
+// => ['hi', 'there', 'you']
  
-_.inRange(1.2, 2);
-// => true
- 
-_.inRange(5.2, 4);
-// => false
- 
-_.inRange(-3, -2, -6);
-// => true
+_.words('hello yo & oi');
+// => ['hello', 'yo', '&', 'oi']
 ```
