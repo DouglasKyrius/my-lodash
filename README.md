@@ -2,7 +2,7 @@
 
 > #### "Number" methods:
 
-## [`_.clamp()`](https://lodash.com/docs/4.17.15#clamp)
+## [`.clamp()`](https://lodash.com/docs/4.17.15#clamp)
 
 Clamps number within the inclusive lower and upper bounds.
 
