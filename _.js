@@ -21,13 +21,25 @@ const _ = {
     
     return isInRange;
   },
-  
+
   words: function(string) {
     if(typeof string === 'string'){ 
       return string.split(' ')
     } else {
       return `It was expected a string but received a ${typeof string}`;
     }
+  },
+
+  pad: function(string, length=0) {
+    if(length <= string.length) {
+      return string;
+    }
+
+    const startPaddingLength = Math.floor((length - string.length) / 2);
+    const endPaddingLength = length - string.length - startPaddingLength;
+    const paddedString = ' '.repeat(startPaddingLength) + string + ' '.repeat(endPaddingLength);
+
+    return paddedString;
   }
 };
 
