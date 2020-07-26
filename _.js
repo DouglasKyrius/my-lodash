@@ -20,6 +20,14 @@ const _ = {
     const isInRange = start <= number && number < end;
     
     return isInRange;
+  },
+  
+  words: function(string) {
+    if(typeof string === 'string'){ 
+      return string.split(' ')
+    } else {
+      return `It was expected a string but received a ${typeof string}`;
+    }
   }
 };
 
