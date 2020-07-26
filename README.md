@@ -25,7 +25,7 @@ _.clamp(10, -5, 5);
 // => 5
 ```
 
-## [`_.inRange()`](https://lodash.com/docs/4.17.15#inRange)
+### [`_.inRange()`](https://lodash.com/docs/4.17.15#inRange)
 
 Checks if n is between start and up to, but not including, end. If end is not specified, it's set to start with start then set to 0. If start is greater than end the params are swapped to support negative ranges.
 ```
@@ -58,9 +58,9 @@ _.inRange(2, 2);
 // => false
 ```
 
-> #### "String" methods:
+> ## "String" methods:
 
-## [`_.words()`](https://lodash.com/docs/4.17.15#words)
+### [`_.words()`](https://lodash.com/docs/4.17.15#words)
 
 Splits string into an array of its words.
 
@@ -80,7 +80,7 @@ _.words('hello yo & oi');
 // => ['hello', 'yo', '&', 'oi']
 ```
 
-## [`_.pad()`](https://lodash.com/docs/4.17.15#pad)
+### [`_.pad()`](https://lodash.com/docs/4.17.15#pad)
 
 Pads string on the left and right sides if it's shorter than length.
 
@@ -103,11 +103,9 @@ _.pad('abc', 3);
 // => 'abc'
 ```
 
-### 
-> ### "Object" methods:
-### 
+> ## "Object" methods:
 
-## [`_.has()`](https://lodash.com/docs/4.17.15#has)
+### [`_.has()`](https://lodash.com/docs/4.17.15#has)
 
 Checks if path is a direct property of object.
 
@@ -119,7 +117,7 @@ Checks if path is a direct property of object.
 .has() will return true if the object contains a value at the key and will return false if not
 ```
 
-### Example
+#### Example
 ``` js
 var object = {"key": "value"};
 
