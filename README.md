@@ -69,12 +69,34 @@ Splits string into an array of its words.
 
 A word is defined by a space-separated string of characters, so each space character, ' ', indicates the end of one word and the start of the next
 ```
-
-Example
+#### Example
 ``` js
 _.words('hi there you');
 // => ['hi', 'there', 'you']
  
 _.words('hello yo & oi');
 // => ['hello', 'yo', '&', 'oi']
+```
+
+## [`_.pad()`](https://lodash.com/docs/4.17.15#pad)
+
+Pads string on the left and right sides if it's shorter than length.
+
+```
+.pad() takes two arguments: a string and a length
+
+.pad() adds spaces evenly to both sides of the string to make it reach the desired length
+
+Extra padding is added to the end of the string if an odd amount of padding is required to reach the specified length
+```
+#### Example
+``` js
+_.pad('hi', 6);
+// => '  hi  '
+
+_.pad('abc', 8);
+// => '  abc   '
+
+_.pad('abc', 3);
+// => 'abc'
 ```
