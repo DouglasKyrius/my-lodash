@@ -68,6 +68,10 @@ const _ = {
     }
 
     return undefined;
+  },
+
+  drop: function(array, number=1){
+    return array.slice(number);
   }
 };
 

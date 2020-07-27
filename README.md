@@ -171,3 +171,6 @@ _.findKey(users, function(o) { return o.age < 40; });
 _.findKey(users, function(o) { return o.age === 1 && o.active === true });
 // => 'pebbles'
 ```
+
+> ## "Array" methods:
+
