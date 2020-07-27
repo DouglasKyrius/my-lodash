@@ -144,3 +144,25 @@ var object = { 'a': 1, 'b': 2, 'c': 3 };
 _.invert(object);
 // => { '1': 'a', '2': 'b', '3': 'c' }
 ```
+
+### [`_.invert()`](https://lodash.com/docs/4.17.15#invert)
+
+This method returns the key of the first element predicate returns truthy for instead of the element itself.
+```
+.findKey() takes two arguments: an object and a predicate function — a function that returns a boolean value
+
+.findKey() iterates through each key / value pair in the provided object and calls the predicate function with the value
+
+.findKey() returns the first key that has a value that returns a truthy value from the predicate function
+
+.findKey() returns undefined if no values return truthy values from the predicate function
+```
+
+#### Example
+``` js
+_.findKey(users, function(o) { return o.age < 40; });
+// => 'barney'
+
+_.findKey(users, function(o) { return o.age === 1 && o.active === true });
+// => 'pebbles'
+```
