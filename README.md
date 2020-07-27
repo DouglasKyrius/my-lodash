@@ -127,3 +127,20 @@ _.has(object, 'key');
 _.has(object, 'notKey');
 // => false
 ```
+
+### [`_.invert()`](https://lodash.com/docs/4.17.15#invert)
+
+Creates an object composed of the inverted keys and values of object.
+```
+.invert() takes one argument: an object
+
+.invert() iterates through each key / value pair in the provided object and swaps the key and value
+```
+
+#### Example
+``` js
+var object = { 'a': 1, 'b': 2, 'c': 3 };
+ 
+_.invert(object);
+// => { '1': 'a', '2': 'b', '3': 'c' }
+```
