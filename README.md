@@ -174,3 +174,29 @@ _.findKey(users, function(o) { return o.age === 1 && o.active === true });
 
 > ## "Array" methods:
 
+### [`_.findKey()`](https://lodash.com/docs/4.17.15#findKey)
+
+Creates a slice of array with n elements dropped from the beginning.
+
+```
+.drop() takes two arguments: an array and a number representing the number of items to drop from the beginning of the array
+
+.drop() returns a new array which contains the elements from the original array, excluding the specified number of elements from the beginning of the array
+
+If the number of elements to drop is unspecified, the method drop one element
+```
+
+#### Example
+``` js
+_.drop([1, 2, 3]);
+// => [2, 3]
+ 
+_.drop([1, 2, 3], 2);
+// => [3]
+ 
+_.drop([1, 2, 3], 5);
+// => []
+ 
+_.drop([1, 2, 3], 0);
+// => [1, 2, 3]
+```
