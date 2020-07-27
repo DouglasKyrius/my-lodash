@@ -174,7 +174,7 @@ _.findKey(users, function(o) { return o.age === 1 && o.active === true });
 
 > ## "Array" methods:
 
-### [`_.findKey()`](https://lodash.com/docs/4.17.15#findKey)
+### [`_.drop()`](https://lodash.com/docs/4.17.15#drop)
 
 Creates a slice of array with n elements dropped from the beginning.
 
