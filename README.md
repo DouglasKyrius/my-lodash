@@ -201,7 +201,7 @@ _.drop([1, 2, 3], 0);
 // => [1, 2, 3]
 ```
 
-### [`_.dropWhile()()`](https://lodash.com/docs/4.17.15#dropWhile())
+### [`_.dropWhile()`](https://lodash.com/docs/4.17.15#dropWhile)
 
 Creates a slice of array excluding elements dropped from the beginning. Elements are dropped until predicate returns falsey.
 
@@ -221,4 +221,32 @@ var users = [
 
 _.dropWhile(users, function(o) { return !o.active; });
 // => objects for ['pebbles']
+```
+
+### [`_.chunk()`](https://lodash.com/docs/4.17.15#chunk)
+
+Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
+
+```
+.chunk() takes two arguments: an array and a size
+
+.chunk() breaks up the supplied array into arrays of the specified size
+
+.chunk() returns an array containing all of the previously-created array chunks in the order of the original array
+
+If the array can’t be broken up evenly, the last chunk will be smaller than the specified size
+
+If no size is supplied to the method, the size is set to 1
+```
+
+#### Example
+``` js
+_.chunk(['a', 'b', 'c', 'd'], 2);
+// => [['a', 'b'], ['c', 'd']]
+ 
+_.chunk(['a', 'b', 'c', 'd'], 3);
+// => [['a', 'b', 'c'], ['d']]
+
+_.chunk(['a', 'b', 'c', 'd']);
+// => [['a'], ['b'], ['c'], ['d']]
 ```
