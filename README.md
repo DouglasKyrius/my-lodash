@@ -145,7 +145,7 @@ _.invert(object);
 // => { '1': 'a', '2': 'b', '3': 'c' }
 ```
 
-### [`_.invert()`](https://lodash.com/docs/4.17.15#invert)
+### [`_.findKey()`](https://lodash.com/docs/4.17.15#findKey)
 
 This method returns the key of the first element predicate returns truthy for instead of the element itself.
 ```
