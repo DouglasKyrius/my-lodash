@@ -200,3 +200,25 @@ _.drop([1, 2, 3], 5);
 _.drop([1, 2, 3], 0);
 // => [1, 2, 3]
 ```
+
+### [`_.dropWhile()()`](https://lodash.com/docs/4.17.15#dropWhile())
+
+Creates a slice of array excluding elements dropped from the beginning. Elements are dropped until predicate returns falsey.
+
+```
+.dropWhile() takes two arguments: an array and a predicate function
+
+The supplied predicate function takes three arguments: the current element, the current element index, and the whole array
+```
+
+#### Example
+``` js
+var users = [
+  { 'user': 'barney',  'active': false },
+  { 'user': 'fred',    'active': false },
+  { 'user': 'pebbles', 'active': true }
+];
+
+_.dropWhile(users, function(o) { return !o.active; });
+// => objects for ['pebbles']
+```
