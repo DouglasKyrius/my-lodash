@@ -160,6 +160,11 @@ This method returns the key of the first element predicate returns truthy for in
 
 #### Example
 ``` js
+var users = {
+  'barney':  { 'age': 36, 'active': true },
+  'pebbles': { 'age': 1,  'active': true }
+};
+
 _.findKey(users, function(o) { return o.age < 40; });
 // => 'barney'
 
